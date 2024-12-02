@@ -1,0 +1,71 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{fullpage}
+% Language and font settings
+\usepackage{polyglossia}
+\setdefaultlanguage{greek}      % Main language
+\setotherlanguage{english}      % Secondary language
+\usepackage{fontspec} % Required for font selection in lualatex
+\usepackage{csquotes}
+\usepackage{libertine}
+% Formatting and lists
+\usepackage{enumitem} % Customizable lists
+\setlist{noitemsep}   % Remove extra space between list items
+% Boxes and highlights
+\usepackage{tcolorbox}
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  filecolor=magenta,      
+  urlcolor=cyan,
+  citecolor=blue,
+  pdfpagemode=FullScreen,
+}
+\tcbuselibrary{listings, breakable}
+
+\newtcolorbox{info}{colback=blue!5!white, colframe=blue!75!black}
+\newtcolorbox{questionbox}{colback=green!5!white, colframe=green!75!black, breakable}
+\usepackage{amsmath, amssymb} % Math support
+\title{\textbf{εκπαιδευτικό φυλλάδιο για το OBS}}
+\author{Ερμής Δούλος (\href{mailto:dit17046@uop.gr}{dit17046@uop.gr})\thanks{Επιβλέπων καθηγητής: Ιωάννης Μοσχολιός (\href{mailto:idm@uop.gr}{idm@uop.gr})}}
+\date{\today}
+
+\begin{document}
+\maketitle
+\begin{center}
+\includegraphics[width=0.5\textwidth]{Figures/uop.png} 
+\end{center}
+\noindent\makebox[\linewidth]{\rule{\textwidth}{1.5pt}}
+
+\section*{Εισαγωγή}
+Σύντομη περιγραφή του σκοπού της εργασίας
+
+\section{Οδηγίες}
+\begin{itemize}
+    \item Διαβάστε προσεκτικά κάθε ερώτηση.
+    \item Συμπληρώστε τις απαντήσεις σας καθαρά και με σαφήνεια.
+\end{itemize}
+
+\section{Ερωτήσεις}
+\begin{enumerate}[label=\textbf{Ερώτηση \arabic*.}]
+    \item Περιγράψτε τον όρο «αλγόριθμος».
+    \item Αναλύστε τη σημασία της ανάλυσης πολυπλοκότητας.
+\end{enumerate}
+\begin{info}
+  Καταληκτική ημερομηνία: 15 Δεκεμβρίου 2024
+\end{info}
+\begin{questionbox}
+\textbf{Ερώτηση 1:} Περιγράψτε τη διαφορά μεταξύ στοίβας (stack) και ουράς (queue).
+\end{questionbox}
+\section*{Λεπτομέρειες Υποβολής}
+Αφήστε με να περάσω απο το θρανίο σας και να ελέγξω ότι οι σκηνές σας είναι σωστές.
+Σε περίπτωση που δεν προλάβετε να τελειώσετε την εργασία σας, μπορείτε να μου στείλετε
+screenshots της κεντρικής οθόνης του OBS και των ρυθμίσεων που έχετε κάνει. Επίσης θα χρειαστεί να 
+κάνετε εξαγωγή τις σκηνές σας, πατώντας το Tab \textbf{Scenes\footnote{ή Σκηνές}} και έπειτα
+\textbf{Export Scene}. Στη συνέχεια, θα πρέπει να μου στείλετε το \texttt{.json} αρχείο που θα δημιουργηθεί,
+το οποίο θα είναι στην ουσία η παραμετροποίηση των σκηνών σας.
+\begin{info}
+\textbf{Προσοχή:} Το αρχείο που θα γίνει εξαχθεί δεν περιέχει τις πηγές σας αυτούσιες, αλλά τις ρυθμίσεις που έχετε κάνει.
+Αυτό σημαίνει πως θα πρέπει να μου στείλετε και τις πηγές σας, όπως τις έχετε δημιουργήσει, σε screenshot.
+\end{info}
+\end{document}
